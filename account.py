@@ -21,7 +21,7 @@ class BankMember:
         self.__SavingsMinimum : int = 100
         self.__SavingsRate : float = 0.02
 
-        self.__member_status = ''
+        self.__member_status : str = ''
         self.__database_check = databaseRead(self.__member_first_name, self.__member_last_name, self.__member_pin)
 
         if self.__database_check == 'InvalidPIN':
