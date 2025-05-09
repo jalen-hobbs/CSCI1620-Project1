@@ -38,7 +38,7 @@ def databaseWrite(first_name : str, last_name : str, pin : str, checking : float
 
     old_base = list(csv.reader(open("database.csv", 'r')))
     account_row = 0
-    with open('.venv/database.csv', 'w') as new_base:
+    with open('database.csv', 'w') as new_base:
         writer = csv.writer(new_base)
         for row in range(len(old_base) - 1, 0, -1):
             if old_base[row][0] == first_name and old_base[row][1] == last_name and old_base[row][2] == pin:
