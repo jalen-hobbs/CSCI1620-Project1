@@ -2,8 +2,6 @@ from PyQt6.QtWidgets import *
 from atmGUI import *
 from account import *
 
-
-# noinspection PyInconsistentReturns,DuplicatedCode
 class Logic(QMainWindow, Ui_ATM):
     def __init__(self) -> None:
         """
